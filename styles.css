@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    color: hsl(215, 51%, 70%);
+    font-size: 1rem;
+    font-weight: 300;
+}
+body {
+    
+    background: hsl(217, 54%, 11%);
+    
+}
+
+
+@media (min-width:650px) {
+    body {
+        position: relative;
+    }
+
+    .card {
+        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% 10%;     
+    }
+}
+
+
+.card{
+    background-color: hsl(216, 50%, 16%);
+    padding: 1.1rem;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    border-radius: 0.8rem;
+    max-width: 17rem;
+    max-height: 34rem;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+}
+
+.card > .nft-image {
+    position: relative;
+    transition: .1s ;
+}
+
+.card > .nft-image > .nft {
+    width:100%;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.card > .nft-image > .image-overlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width:auto;
+    
+}
+
+.nft-image:hover {
+    filter: invert(74%) sepia(94%) saturate(500%) hue-rotate(109deg) brightness(80%) contrast(90%);
+    opacity: 60%;
+    
+}
+
+.nft-image:hover > .image-overlay {
+    display: block;
+
+
+    
+}
+
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: hsl(178, 100%, 50%);
+    transition-delay: .08s;
+}
+
+
+.extra-details {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: .1rem;
+}
+
+.etherium > h3 {
+    color:hsl(178, 100%, 50%)
+
+}
+
+.etherium {
+    display: flex;
+    justify-self:baseline;
+    padding-left: 1.2rem;
+    background-image: url(./images/icon-ethereum.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+
+.time-remaining {
+    justify-self: end;
+    display: flex;
+    padding-left: 1.6rem;
+    background-image: url(./images/icon-clock.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+
+}
+
+
+
+.creator{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+hr {
+    border: .05px solid hsl(215, 32%, 27%);
+  border-radius: 5px;
+}
+
+.creator > img{
+    width: 10%;
+    height: 10%;
+    border: 1px white solid;
+    border-radius: 50%;
+}
+
+.attribution {
+    position:sticky;
+    left:50%;
+    
+}
